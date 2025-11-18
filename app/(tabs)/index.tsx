@@ -10,6 +10,7 @@ import EmojiPicker from '@/components/EmojiPicker';
 import EmojiList from '@/components/EmojiList';
 import EmojiSticker from '@/components/EmojiSticker';
 
+const PlaceholderImage = require('@/assets/images/background-image.jpeg');
 
 
 export default function Index() {

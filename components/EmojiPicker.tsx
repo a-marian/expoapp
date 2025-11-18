@@ -14,7 +14,7 @@ export default function EmojiPicker({ isVisible, children, onClose }: Props){
                 <View style={styles.modalContent}>
                     <View style={styles.titleContainer}>
                         <Text style={styles.title}> Choose a sticker</Text>
-                        <Pressable onPress={onPress}>
+                        <Pressable onPress={onClose}>
                             <MaterialIcons name="close" color="#fff" size={22} />
                         </Pressable>
                     </View>
@@ -26,7 +26,7 @@ export default function EmojiPicker({ isVisible, children, onClose }: Props){
 }
 
 const styles= StyleSheet.create({
-    modalContent:{
+    modalContent: {
         height: '25%',
         width: '100%',
         backgroundColor: '#25292e',
@@ -35,7 +35,7 @@ const styles= StyleSheet.create({
         position: 'absolute',
         bottom: 0,
     },
-    titleContainer{
+    titleContainer: {
         height: '16%',
         backgroundColor: '#464C55',
         borderTopRightRadius: 10,
